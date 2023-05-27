@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Get A Qoute | We are among the best maintenance companies in Dubai with round the clock services. Home Maintenance Dubai Repairing Services Company in Dubai - 050-846-7469</title>
+    <meta content="We are among the best maintenance companies in Dubai with round the clock services. Home Maintenance Dubai Repairing Services Company in Dubai - 050-846-7469" name="description">
+    <meta content="We are among the best maintenance companies in Dubai with round the clock services. Home Maintenance Dubai Repairing Services Company in Dubai - 050-846-7469" name="keywords">
+<!--
+    start style section
+-->
+<style>
+/* Style the form container */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* Style the form labels */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Style the form input fields */
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+/* Style the form submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a hover effect to the submit button */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the form error messages */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Style the form success message */
+.success {
+  color: green;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+</style>
+
+<!--
+    end style section
+-->
+</head>
+
+<!------------------------------------------------------>
+
+<!--
+    form-html
+-->
+<body>
+<form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="contact">Contact Number:</label>
+    <input type="tel" id="contact" name="contact" required>
+    <br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    <br>
+    <label for="problem">Problem:</label>
+    <textarea id="problem" name="problem" rows="4" cols="50" required></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <!--
+    end-form
+  -->
+  <!--
+    php section
+  -->
+  <!--
+  <php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $contact = test_input($_POST["contact"]);
+  $address = test_input($_POST["address"]);
+  $problem = test_input($_POST["problem"]);
+
+  $to = "chanasislam786@gmail.com";
+  $subject = "New Problem Report";
+  $message = "Name: $name\nContact: $contact\nAddress: $address\nProblem: $problem";
+  $headers = "From: webmaster@example.com" . "\r\n" .
+             "Reply-To: webmaster@example.com" . "\r\n" .
+             "X-Mailer: PHP/" . phpversion();
+
+  mail($to, $subject, $message, $headers);
+  echo "Thank you for your report!";
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+-->
+</body>
+</html>
